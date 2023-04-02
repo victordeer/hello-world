@@ -1,4 +1,5 @@
 //Program liczacy sumê cyfr liczby ca³kowitej
+//Dodatkowy komentarz
 
 #include<stdio.h>
 

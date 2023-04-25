@@ -1,5 +1,5 @@
-//Program liczacy sumê cyfr liczby ca³kowitej
-//Dodatkowy komentarz
+//Program liczacy sume cyfr liczby calkowitej
+//Dodatkowy komentarz - modyfikacja z 25.04.2023
 
 #include<stdio.h>
 
@@ -11,14 +11,14 @@ int main(void)
 	printf("Liczba calkowita: ");
 	scanf_s("%i", &number);
 
-	while (number < 0)					//Zmiana znaku jeœli liczba n bêdzie ujemna
+	while (number < 0)					//Zmiana znaku jezeli liczba n bedzie ujemna
 		number *= -1;
 
 	sumaCyfr = 0;
 	while (number != 0)
 	{
 		sumaCyfr += (number % 10);		//Dodanie wyniku z modulo n przez 10 do saumaCyfr
-		number /= 10;					//Podzielenie ca³kowitoliczbowo n przez 10
+		number /= 10;					//Podzielenie calkowitoliczbowo n przez 10
 	}
 
 	printf("Suma jej cyfr to: %i\n", sumaCyfr);
